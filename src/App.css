@@ -2,37 +2,72 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@font-face {
+  font-family: "C1";
+  src: url("fonts/CONTV2.otf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "C1i";
+  src: url("fonts/CONTV2-Italic.otf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* Add the following CSS */
+
+button{
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: "C1i";
+  font-size: 400% !important;
+  color: inherit; /* Add this line to inherit text color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-family: "C1";
+  color: inherit; /* Add this line to inherit text color */
+}
+
+h3 {
+  font-family: "C1i";
+  color: inherit; /* Add this line to inherit text color */
+}
+
+h4 {
+  font-family: 'Source Code Pro', monospace !important;
+  color: inherit; /* Add this line to inherit text color */
+}
+
+p {
+  font-family: 'Source Code Pro', monospace !important;
+  color: inherit; /* Add this line to inherit text color */
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit; /* Add this line to inherit link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D3FB75 !important;
+}
+
+a:active {
+  color: #9375FB !important;
+}
+
+body.dark-mode {
+  background-color: #0A0805;
+  color: whitesmoke !important;
 }
